@@ -16,7 +16,7 @@ module.exports = {
     },
     login: (req, res) => {
         const dbInstance = req.app.get('db');
-        const {username, password} = req.body;
+        const {username, password} = req.query;
 
         dbInstance.get_user([username, password])
             .then(user => {

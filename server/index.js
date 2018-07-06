@@ -35,7 +35,7 @@ app.get('/user_posts/:user_id', controller.get_user_posts);
 
 app.post('/new_user', controller.create_user);
 
-app.post('/login', controller.login);
+app.get('/login', controller.login);
 
 app.post('/logout', controller.logout);
 
