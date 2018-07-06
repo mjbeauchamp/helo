@@ -30,7 +30,7 @@ class Auth extends Component {
 
     login =() => {
         let {username, password} = this.state;
-        axios.post('/login', {username: username, password: password})
+        axios.post(`/login`, {username: username, password: password})
             .then(response => {
                 console.log(response)
                 console.log("You logged in!")

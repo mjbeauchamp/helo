@@ -29,6 +29,8 @@ app.use(session({
 
 app.use(bodyParser.json());
 
+app.use( express.static( `${__dirname}/../build` ) );
+
 app.get('/user_posts/:user_id', controller.get_user_posts);
 
 app.post('/new_user', controller.create_user);
