@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 function Nav(props) {
+
     console.log(props)
     let {username, profile_picture} = props;
     console.log('navbar ', props)
